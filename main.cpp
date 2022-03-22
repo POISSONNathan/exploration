@@ -5,16 +5,16 @@ using namespace std;
 
 int main(){
 
-    int choix;
-    
-    cout << "Où veux tu aller ? 1 : Dans la foret ? / 2 : Dans la ville ?" << endl;
+    string choix;
+
+    cout << "Où veux tu aller ? 1 : foret / 2 : ville" << endl;
     cin >> choix;
 
-    if (choix == 1){
+    if (choix == "foret"){
         cout << "Vous avez atteint la forêt, bien joué !";
     }
 
-    if (choix == 2){
+    if (choix == "ville"){
         cout << "Vous avez atteint la ville, bien joué !";
     }
 
