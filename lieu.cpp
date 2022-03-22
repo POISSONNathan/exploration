@@ -5,7 +5,7 @@
 #include <iostream>
 
     Lieu::Lieu(): _name("foret"),_description("vous etes a la foret"),_difficulte(3),_lieuAccess(1){}
-    Lieu::Lieu(string name,string description,int difficulte,vector<int> lieuAccess) : _description(description),_difficulte(difficulte),_lieuAccess(_lieuAccess){}
+    Lieu::Lieu(string name,string description,int difficulte,vector<int> lieuAccess) : _description(description),_difficulte(difficulte),_lieuAccess(lieuAccess){}
 
     string Lieu::getName(){ 
         return _name;

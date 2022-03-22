@@ -7,7 +7,9 @@ Ville::Ville() : Lieu() {
     _name = "ville";
     _description ="des gangs veulent vous tuer, rester sur vos gardes";
     _difficulte = 14;
-    _lieuAccess [10,12,14];
+    _lieuAccess[1]=11;
+    _lieuAccess[2]=13;
+    _lieuAccess[3]=14;
 };
 
 #endif

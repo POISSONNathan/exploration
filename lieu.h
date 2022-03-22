@@ -24,6 +24,7 @@ class Lieu{
         string getDescription();
         int getDifficulte();
         vector<int> getLieuAccess();
+        int changeLieu();
 
 
    
