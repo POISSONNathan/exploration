@@ -13,9 +13,9 @@ int main(){
     int changement = 0;
     int choix;
 
-    for(changement=0;changement<3;changement=changement+1){
+    for(changement=0;changement<3;changement++){
 
-        if (changement = 0){
+        if (changement = 1){
         cout << "Où veux tu aller ? 1 : foret / 2 : montagne / 3 : ville" << endl;
         }
         else{
@@ -36,7 +36,10 @@ int main(){
         cout << "Vous etes a la " << monLieu -> getName() << ", la difficulté est de " << monLieu->getDifficulte() << ", " << monLieu->getDescription() << ", " << endl;
         cout << "vous pouvez aller aux endroits : " << monLieu->getLieuAccess() << endl; // cette ligne ne fonctionne pas, la fonction est surement fausse pour une raison que j'ignore
 
-        changement = changement + 1;
+        monLieu->changeEndurance(monLieu->getDifficulte());
+
+        cout << "Votre endurance est de" << monLieu.getEndurance() << endl;
     }
+
     return 0;
 }

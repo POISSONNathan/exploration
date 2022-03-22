@@ -14,8 +14,7 @@ class Lieu{
         string _description;
         int _difficulte;
         vector<int> _lieuAccess;
-
-
+        int _endurance = 100;
 
     public:
         Lieu();
@@ -23,8 +22,10 @@ class Lieu{
         string getName(); 
         string getDescription();
         int getDifficulte();
-        vector<int> getLieuAccess();
         int changeLieu();
+        vector<int> getLieuAccess();
+        int getEndurance();
+        void changeEndurance(int valeur);
 
 
    
